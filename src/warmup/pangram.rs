@@ -11,6 +11,13 @@ use std::collections::HashSet;
 ///
 /// * `true` if the sentence is a pangram.
 /// * `false` otherwise.
+///
+/// # Complexity
+///
+/// * Time Complexity: O(N)
+///   * O(N) for iterating through the sentence, O(1) for inserting into the hash set.
+/// * Space Complexity: O(1)
+///   * We are only adding lowercase alphabets, hence we add at most 26 chars to the hash set regardless of input size.
 pub fn check_if_pangram(sentence: String) -> bool {
     let mut chars = HashSet::new();
 
