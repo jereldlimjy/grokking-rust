@@ -3,11 +3,13 @@ use std::u32;
 /// Gets the shortest distance between 2 words in a list.
 ///
 /// # Arguments
+///
 /// * `words` - A vector of strings.
 /// * `word_1` - A string in `words`.
 /// * `word_2` - Another string in `words`.
 ///
 /// # Returns
+///
 /// * Shortest distance between `word_1` and `word_2`.
 /// * `u32::MAX` if either word is not found
 ///

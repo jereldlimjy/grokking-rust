@@ -10,6 +10,7 @@ use std::collections::HashMap;
 /// * `t` - A string t.
 ///
 /// # Returns
+///
 /// * `true` if `t` is an anagram of `s`.
 /// * `false` otherwise.
 ///

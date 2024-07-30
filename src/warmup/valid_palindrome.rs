@@ -4,7 +4,7 @@
 ///
 /// # Arguments
 ///
-/// * `s` - a string that represents the phrase to be checked.
+/// * `s` - A string that represents the phrase to be checked.
 ///
 /// # Returns
 ///
