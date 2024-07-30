@@ -17,7 +17,7 @@
 ///   * O(N) for converting into a vector of chars as well as iterating through the vector.
 /// * Space Complexity: O(N)
 ///   * O(N) for storing the vector of chars.
-pub fn valid_palindrome(s: String) -> bool {
+pub fn is_palindrome(s: String) -> bool {
     if s.len() < 2 {
         return true;
     }
@@ -54,7 +54,7 @@ mod tests {
     #[test]
     fn is_palindrome_sentence_1() {
         assert_eq!(
-            valid_palindrome("A man, a plan, a canal, Panama!".to_string()),
+            is_palindrome("A man, a plan, a canal, Panama!".to_string()),
             true
         );
     }
@@ -62,23 +62,23 @@ mod tests {
     #[test]
     fn is_palindrome_sentence_2() {
         assert_eq!(
-            valid_palindrome("Was it a car or a cat I saw?".to_string()),
+            is_palindrome("Was it a car or a cat I saw?".to_string()),
             true
         );
     }
 
     #[test]
     fn is_palindrome_empty_string() {
-        assert_eq!(valid_palindrome("".to_string()), true);
+        assert_eq!(is_palindrome("".to_string()), true);
     }
 
     #[test]
     fn is_palindrome_space() {
-        assert_eq!(valid_palindrome(" ".to_string()), true);
+        assert_eq!(is_palindrome(" ".to_string()), true);
     }
 
     #[test]
     fn is_not_palindrome() {
-        assert_eq!(valid_palindrome("hello 123".to_string()), false);
+        assert_eq!(is_palindrome("hello 123".to_string()), false);
     }
 }
