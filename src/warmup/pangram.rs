@@ -5,7 +5,7 @@ use std::collections::HashSet;
 ///
 /// # Arguments
 ///
-/// * `sentence` - A string slice that represents the sentence to be checked.
+/// * `sentence` - A string that represents the sentence to be checked.
 ///
 /// # Returns
 ///
