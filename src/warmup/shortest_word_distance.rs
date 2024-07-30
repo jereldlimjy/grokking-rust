@@ -22,21 +22,17 @@ pub fn shortest_distance(words: Vec<String>, word_1: String, word_2: String) -> 
     let mut word_1_ptr: Option<usize> = None;
     let mut word_2_ptr: Option<usize> = None;
 
-    for i in 0..words.len() {
-        let curr_word = words.get(i);
+    for (i, curr_word) in words.into_iter().enumerate() {
+        if curr_word == word_1 {
+            word_1_ptr = Some(i);
+        } else if curr_word == word_2 {
+            word_2_ptr = Some(i);
+        }
 
-        if let Some(word) = curr_word {
-            if *word == word_1 {
-                word_1_ptr = Some(i);
-            } else if *word == word_2 {
-                word_2_ptr = Some(i);
-            }
-
-            if let (Some(ptr_1), Some(ptr_2)) = (word_1_ptr, word_2_ptr) {
-                let curr_dist = (ptr_1 as u32).abs_diff(ptr_2 as u32);
-                if curr_dist < dist {
-                    dist = curr_dist
-                }
+        if let (Some(ptr_1), Some(ptr_2)) = (word_1_ptr, word_2_ptr) {
+            let curr_dist = (ptr_1 as u32).abs_diff(ptr_2 as u32);
+            if curr_dist < dist {
+                dist = curr_dist
             }
         }
     }
