@@ -4,7 +4,7 @@
 
 | Chapter | Completed | Date Completed |
 |---------|-----------|----------------|
-| **Warmup** | []  | |
+| **Warmup** | [&check;]  | 31/7/24 |
 | **Sliding Window** | [ ] | |
 | **Two Pointer** | [ ] | |
 | **Monotonic Stack** | [ ] | |
