@@ -1,4 +1,4 @@
-/// Given a string s, reverse only all the vowels in the string and return it.
+/// Returns a given string with all the vowels reversed.
 /// The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both lower and upper cases, more than once.
 ///
 /// # Arguments

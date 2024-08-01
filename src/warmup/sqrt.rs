@@ -6,12 +6,12 @@
 ///
 /// # Returns
 ///
-/// Square root of `x` rounded down to the nearest integer.
+/// * Square root of `x` rounded down to the nearest integer.
 ///
 /// # Complexity
 ///
 /// * Time Complexity: O(log x)
-///   * Binary search on a max search space of x / 2, hence O(log x)
+///   * Binary search on a max search space of x / 2, hence O(log x).
 /// * Space Complexity: O(1)
 ///   * Constant space as we use a fixed number of integer variables.
 pub fn sqrt(x: u32) -> u32 {
@@ -23,7 +23,7 @@ pub fn sqrt(x: u32) -> u32 {
 
     let mut start = 1;
     let mut end = x / 2;
-    let mut mid = (start + end) / 2;
+    let mut mid;
 
     while start <= end {
         mid = (start + end) / 2;
