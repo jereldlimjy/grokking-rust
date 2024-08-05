@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-/// Given a string and a pattern, find out if the string contains any permutation of the pattern.
+/// Given a string and a pattern, finds out if the string contains any permutation of the pattern.
 ///
 /// # Arguments
 ///
