@@ -41,7 +41,7 @@ pub fn find_string_anagrams(str: String, pattern: String) -> Vec<u32> {
         });
 
         // check if matched count equals unique chars in pattern
-        if matched == pattern_map.values().count() {
+        if matched == pattern_map.keys().count() {
             indices_vec.push(window_start as u32);
         }
 
