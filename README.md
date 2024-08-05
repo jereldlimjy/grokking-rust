@@ -5,7 +5,7 @@
 | Chapter | Completed | Date Completed |
 |---------|-----------|----------------|
 | **Warmup** | [&check;]  | 31/7/24 |
-| **Sliding Window** | [ ] | |
+| **Sliding Window** | [&check;] | 5/8/24 |
 | **Two Pointer** | [ ] | |
 | **Monotonic Stack** | [ ] | |
 | **Matrix Traversal** | [ ] | |
