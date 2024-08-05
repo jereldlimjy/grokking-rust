@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-/// Given a string and a pattern, finds all anagrams of the pattern in the given string.
+/// Finds all anagrams of the pattern in the given string.
 ///
 /// # Arguments
 ///

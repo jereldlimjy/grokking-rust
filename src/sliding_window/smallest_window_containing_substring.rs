@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-/// Given a string and a pattern, finds the smallest substring in the given string which has all the character occurrences of the given pattern.
+/// Finds the smallest substring in the given string which has all the character occurrences of the given pattern.
 ///
 /// # Arguments
 ///
